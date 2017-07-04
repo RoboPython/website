@@ -14,7 +14,9 @@ a:hover {
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: #fff;
+  text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #231f20;
+  border: .05rem solid #231f20;
 }
 
 
@@ -67,7 +69,6 @@ body {
   margin-bottom: 0;
 }
 
-
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: bold;
@@ -80,8 +81,6 @@ body {
 .nav-masthead .nav-link:focus {
   border-bottom-color: rgba(40,24,7,.25);
 }
-
-
 
 .nav-masthead .nav-link + .nav-link {
   margin-left: 1rem;
